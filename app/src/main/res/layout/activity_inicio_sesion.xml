@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8AC4D0"
+    tools:context=".InicioSesion">
+
+    <TextView
+        android:id="@+id/tv_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="58dp"
+        android:fontFamily="monospace"
+        android:text="INICIAR SESION"
+        android:textColor="#28527A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_correo_text"
+        app:layout_constraintStart_toStartOf="@+id/tv_correo_text" />
+
+    <TextView
+        android:id="@+id/tv_correo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="235dp"
+        android:fontFamily="monospace"
+        android:text="Correo"
+        android:textColor="#28527A"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_contraseña_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
+        android:text="Contraseña"
+        android:textColor="#28527A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_contraseña"
+        app:layout_constraintStart_toStartOf="@+id/input_correo" />
+
+    <EditText
+        android:id="@+id/input_contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textPassword"
+        android:text="ejemplo123456"
+        android:textColor="#FAE57C"
+        app:layout_constraintEnd_toEndOf="@+id/tv_contraseña_text"
+        app:layout_constraintStart_toEndOf="@+id/tv_contraseña_text"
+        app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#F4D160"
+        android:fontFamily="monospace"
+        android:text="REGRESAR"
+        android:textColor="#28527A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:backgroundTint="#F4D160"
+        android:fontFamily="monospace"
+        android:text="INICIAR"
+        android:textColor="#28527A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_contraseña" />
+
+    <EditText
+        android:id="@+id/input_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="textEmailAddress"
+        android:text="correo@ejemplo.com"
+        android:textColor="#FAE57C"
+        app:layout_constraintStart_toStartOf="@+id/tv_correo_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_correo_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
